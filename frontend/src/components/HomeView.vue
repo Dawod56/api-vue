@@ -1,32 +1,34 @@
 <template>
-    <div class="hello">
-    </div>
-  </template>
+<div></div>
+</template>
   
-  <script>
-  export default {
+<script>
+export default {
     name: 'HomeView',
     props: {
-      msg: String
+        msg: String
     }
-  }
-  </script>
+}
+</script>
   
   <!-- Add "scoped" attribute to limit CSS to this component only -->
-  <style scoped>
-  h3 {
+<style scoped>
+h3 {
     margin: 40px 0 0;
-  }
-  ul {
+}
+
+ul {
     list-style-type: none;
     padding: 0;
-  }
-  li {
+}
+
+li {
     display: inline-block;
     margin: 0 10px;
-  }
-  a {
+}
+
+a {
     color: #42b983;
-  }
-  </style>
+}
+</style>
   
