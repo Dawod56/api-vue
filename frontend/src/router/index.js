@@ -8,6 +8,7 @@ import Login from "@/views/LoginView.vue";
 import Products from "@/views/Products.vue";
 import PageWithId from "@/views/PageWithId.vue";
 import CreateProduct from "@/views/CreateProduct.vue";
+import SignUp from "@/views/SignUp.vue";
 
 Vue.use(VueRouter);
 
@@ -33,6 +34,11 @@ const routes = [
     path: '/product/create',
     name:'createProduct',
     component: CreateProduct
+  },
+  {
+    path: '/signup',
+    name:'signup',
+    component: SignUp
   },
   {
     path: "/login",

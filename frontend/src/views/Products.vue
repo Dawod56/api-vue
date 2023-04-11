@@ -7,11 +7,11 @@
                 <div class="position-relative">
                     <h3>Product list</h3>
                     <div class="position-absolute top-0 end-0">
-                        
-                            <a href="/product/create" class="btn btn-success">
-                                Create
-                            </a>
-                        
+
+                        <a href="/product/create" class="btn btn-success">
+                            Create
+                        </a>
+
                     </div>
                 </div>
                 <div class="col-sm-4" style="margin-top: 10px;" v-for="item in items" :key="item.id">
@@ -19,7 +19,8 @@
                         <div class="card-body">
                             <div class="position-relative">
                                 <div class="position-absolute top-0 end-0">
-                                    <router-link :to="{ name: 'pageWithId', params: { id: item.id } }">Edit</router-link>
+                                    <router-link :to="{ name: 'pageWithId', params: { id: item.id } }" class="btn btn-info">Edit</router-link><br>
+                                    <button class="btn btn-danger" @click="deleteItem(item.id)" style="margin-top: 5px;">Delete</button>
                                 </div>
                             </div>
                             <img src="../assets/logo.png">
@@ -60,8 +61,15 @@ export default {
             })
     },
     methods: {
-        editItem(item) {
-            this.item = Object.assign({}, item)
+        deleteItem(item) {
+            axios.delete('http://localhost:8000/api/product/delete/' + item)
+                .then(response => {
+                    console.log(response);
+                    this.$router.push('/')
+                })
+                .catch(error => {
+                    console.log(error);
+                });
         }
     },
     computed: {}

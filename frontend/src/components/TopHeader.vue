@@ -20,11 +20,11 @@
                 Product
               </div>
             </b-nav-item>
-            <b-nav-item class="" to="/about">
+            <!-- <b-nav-item class="" to="/about">
               <div>
                 About
               </div>
-            </b-nav-item>
+            </b-nav-item> -->
             <b-button class="btn btn-success" v-if="!userLoggedIn" pill variant="success" to="/login">
               Login
             </b-button>
