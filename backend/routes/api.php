@@ -24,4 +24,5 @@ Route::prefix('auth')->group(function(){
     Route::post('login',[RegisterController::class,'login']);
 });
 Route::get('products',[ProductController::class,'index']);
+Route::post('products/store',[ProductController::class,'store']);
 
