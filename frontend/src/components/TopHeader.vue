@@ -10,7 +10,12 @@
           </b-navbar-nav>
 
           <b-navbar-nav class="ml-auto">
-            <b-nav-item class="" to="/cart-view">
+            <b-nav-item class="" to="/">
+              <div>
+                Home
+              </div>
+            </b-nav-item>
+            <b-nav-item class="" to="/products">
               <div>
                 Product
               </div>
@@ -20,11 +25,8 @@
                 About
               </div>
             </b-nav-item>
-            <b-nav-item class="" v-if="userLoggedIn">
-              <b-img height="35px" width="35px" :src="user.profileImage" />
-            </b-nav-item>
-            <b-button class="" v-if="!userLoggedIn" pill variant="success" to="/login">
-              Login &amp; Register
+            <b-button class="btn btn-success" v-if="!userLoggedIn" pill variant="success" to="/login">
+              Login
             </b-button>
           </b-navbar-nav>
         </b-navbar>

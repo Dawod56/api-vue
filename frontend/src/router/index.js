@@ -1,10 +1,12 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "@/views/HomeView.vue";
-import CartView from "@/views/CartView.vue";
+// import CartView from "@/views/CartView.vue";
 import NotFound from "@/views/NotFound.vue";
 import About from "@/views/AboutView.vue";
 import Login from "@/views/LoginView.vue";
+import Products from "@/views/Products.vue";
+import PageWithId from "@/views/PageWithId.vue";
 
 Vue.use(VueRouter);
 
@@ -16,10 +18,15 @@ const routes = [
     meta: { title: "Home" },
   },
   {
-    path: "/cart-view",
-    name: "cart-view",
-    component: CartView,
-    meta: { title: "Your Cart" },
+    path: "/products",
+    name: "products",
+    component: Products,
+    meta: { title: "Products" },
+  },
+  {
+    path: '/products/:id',
+    name: 'pageWithId',
+    component: PageWithId
   },
   {
     path: "/login",

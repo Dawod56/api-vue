@@ -1,7 +1,10 @@
-import Api from "./Api"
+// import Api from "./Api"
+import axios from "axios"
 
 export default {
-    getAllProducts() {
-        return Api().get('/api/products/getAllProducts')
+    async get(id) {
+        const response = await axios.get(`http://localhost:8000/api/products/${id}`)
+        return response.data
     },
+
 }

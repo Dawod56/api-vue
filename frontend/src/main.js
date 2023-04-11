@@ -10,7 +10,7 @@ Vue.use(BootstrapVue);
 Vue.config.productionTip = false;
 unsync();
 import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap-vue/dist/bootstrap-vue.css';
+import 'bootstrap/dist/js/bootstrap.js'
 new Vue({
   router,
   store,
