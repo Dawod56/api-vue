@@ -66,6 +66,7 @@ class ProductController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $product = Product::find(1);
+        $product->delete();
     }
 }
