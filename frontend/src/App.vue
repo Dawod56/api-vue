@@ -1,19 +1,23 @@
 <template>
-  <Navbar />
-  <HelloWorld />
-  <HomeView />
+  <div>
+    <Header></Header>
+    <Container></Container>
+    <Footer></Footer>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import HomeView from './components/HomeView.vue'
 
+import Footer from './components/Footer.vue';
+import Header from './components/Header.vue';
+import Container from './components/Container.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
-    HomeView,
+    Header,
+    Container,
+    Footer,
   }
 }
 </script>

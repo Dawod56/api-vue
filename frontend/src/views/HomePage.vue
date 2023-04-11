@@ -1,14 +1,9 @@
 <template>
-    <div>
-        <div class="mt-5 p-4 bg-success text-white text-center">
-            <p>Footer</p>
-        </div>
-    </div>
+    <div></div>
 </template>
-  
 <script>
 export default {
-    name: 'FooterView',
+    name: 'HomePage',
     props: {},
     components: {},
     data() {
