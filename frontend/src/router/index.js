@@ -7,6 +7,7 @@ import About from "@/views/AboutView.vue";
 import Login from "@/views/LoginView.vue";
 import Products from "@/views/Products.vue";
 import PageWithId from "@/views/PageWithId.vue";
+import CreateProduct from "@/views/CreateProduct.vue";
 
 Vue.use(VueRouter);
 
@@ -27,6 +28,11 @@ const routes = [
     path: '/products/:id',
     name: 'pageWithId',
     component: PageWithId
+  },
+  {
+    path: '/product/create',
+    name:'createProduct',
+    component: CreateProduct
   },
   {
     path: "/login",

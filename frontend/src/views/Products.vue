@@ -3,7 +3,17 @@
         <TopHeader />
         <div class="container">
             <div class="row" style="margin-top: 30px;">
-                <h3>Product list</h3>
+
+                <div class="position-relative">
+                    <h3>Product list</h3>
+                    <div class="position-absolute top-0 end-0">
+                        
+                            <a href="/product/create" class="btn btn-success">
+                                Create
+                            </a>
+                        
+                    </div>
+                </div>
                 <div class="col-sm-4" style="margin-top: 10px;" v-for="item in items" :key="item.id">
                     <div class="card">
                         <div class="card-body">
