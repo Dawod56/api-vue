@@ -44,6 +44,10 @@ class ProductController extends Controller
     {
         //
     }
+    public function view($id){
+        $product = Product::find($id);
+        return response()->json($product);
+    }
 
     /**
      * Show the form for editing the specified resource.
@@ -66,7 +70,7 @@ class ProductController extends Controller
      */
     public function destroy(string $id)
     {
-        $product = Product::find(1);
+        $product = Product::find($id);
         $product->delete();
     }
 }
