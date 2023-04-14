@@ -35,16 +35,19 @@ api will be
 http://localhost:8000/api/
 
 ## frontend setup
+
 ```
 npm install
 ```
 
-### Compiles and minifies for production
+## Compiles and minifies for production
+
 ```
 npm run build
 ```
 
-### Compiles and hot-reloads for development
+## Compiles and hot-reloads for development
+
 ```
 npm run serve
 ```
