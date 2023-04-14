@@ -10,22 +10,24 @@ For this project I follow these tasks.
 ## Backend setup
 Run the following command
 
+```
 cd backend
 ```
-
+```
 cp .env.example .env
 ```
 
 set the database, user and password
-
+```
 composer install
+```
 ```
 php artisan key:generate
 ```
-
+```
 php artisan migrate
 ```
-
+```
 php artisan serve
 ```
 
@@ -35,11 +37,12 @@ http://localhost:8000/api/
 ## frontend setup
 ```
 npm install
+```
 
 ### Compiles and minifies for production
 ```
 npm run build
-``````
+```
 
 ### Compiles and hot-reloads for development
 ```
